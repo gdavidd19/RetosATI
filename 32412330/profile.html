@@ -6,66 +6,20 @@
     <title>Gabriel Conde</title>
     <link rel="icon" sizes="32x32" href="..\icon\cropped-logonuevo-32x32.png">
     <link rel="icon" sizes="192x192" href="..\icon\cropped-logonuevo-192x192.png">
-    <style>
-        @import url("../css/_theme.css");
-
-        body{
-            font-family: var(--primary-font);
-            font-size: 24px;
-            margin: 0px;
-            background-color: rgba(235, 235, 235, 1);
-        }
-
-        #cajaPerfil{
-            display: flex;
-            margin-left: 0px;
-            margin-right: 30px;
-            margin-bottom: 30px;
-            margin-top: 0px;
-            box-shadow: -1px 5px 7px 4px rgba(0, 0, 0, 0.2);
-            background-color: white;
-        }
-
-        #cajaFotoPerfil{
-            width: 400px;
-            height: 600px;
-            padding-right: 7.5px;
-            background-color: var(--main-color);
-        }
-
-        #fotoPerfil{
-            width: 400px;
-            height: 600px;
-            border-bottom-right-radius: 100px;
-        }
-
-        #cajaTexto{
-            margin: 15px 25px 15px 25px;
-        }
-
-        #nombre{
-            color: var(--main-color);
-            font-weight: 1000;
-            font-size: 48px;
-            margin-top: 0px;
-            margin-bottom: 10px;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-        #descripcion{
-            font-family: var(--condensed-font);
-        }
-
-        #correo:active{
-            color: var(--accent-color);
-        }
-    </style>
+    <link rel="stylesheet" href="..\css\style.css">
 </head>
 <body>
     <header>
-
+        <h1 class="titulo">ATI<p id="ucv">[UCV]</p>Log</h1>
+        <form id="busqueda">
+            <input id="campoBusqueda" placeholder="Nombre...">
+            <button id="botonBusqueda" type="submit">Buscar</button>
+        </form>
+        <div id="circuloIconoUsuario">
+            <img src="../icon/userIcon.svg" id="iconoUsuario">
+        </div>
     </header>
+    <hr class="separador">
     <section id="cajaPerfil">
         <div id="cajaFotoPerfil">
             <img src="32412330.jpg" id="fotoPerfil">
@@ -108,8 +62,9 @@
             </p>
         </div>
     </section>
+    <hr class="separador">
     <footer>
-
+        Copyright © 2026 Escuela de computación - ATI. Todos los derechos reservados
     </footer>
 </body>
 </html>
