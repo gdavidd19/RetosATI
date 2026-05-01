@@ -135,6 +135,8 @@ header {
     display: grid;
     width: 350px;
     margin: 0px 40px 50px 40px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .fotoPerfil {
@@ -161,6 +163,7 @@ header {
     background-color: var(--main-color);
     height: 25px;
     border-radius: 0px 0px 30px 30px;
+    border: none;
 }
 
 footer {
