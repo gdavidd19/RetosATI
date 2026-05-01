@@ -1,5 +1,4 @@
 @import url("../css/_theme.css");
-
 body {
     font-family: var(--primary-font);
     font-size: 24px;
@@ -133,11 +132,22 @@ header {
 
 .cajaPerfil {
     display: grid;
+    position: relative;
     width: 350px;
     margin: 0px 40px 50px 40px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
     text-decoration: none;
+    background-color: var(--main-color);
     color: inherit;
+    transition: transform 0.5s ease;
 }
+
+.cajaPerfil:hover{
+    transform: scale(1.1) rotate(5deg);
+    background-color: var(--accent-color);
+}
+
 
 .fotoPerfil {
     width: 350px;
@@ -160,7 +170,7 @@ header {
 
 .lineaInferior {
     margin: 0px;
-    background-color: var(--main-color);
+    
     height: 25px;
     border-radius: 0px 0px 30px 30px;
     border: none;
