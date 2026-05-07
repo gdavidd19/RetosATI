@@ -1,101 +1,54 @@
 @import url("../css/_theme.css");
+
 body {
     font-family: var(--primary-font);
-    font-size: 24px;
-    margin: 0px;
+    font-size: 1.4vw;
+    margin: 0;
     background-color: rgba(235, 235, 235, 1);
-}
-
-#cajaPerfil {
-    display: flex;
-    margin-left: 0px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    box-shadow: -1px 5px 7px 4px rgba(0, 0, 0, 0.2);
-    background-color: white;
-}
-
-#cajaFotoPerfil {
-    width: 400px;
-    height: 600px;
-    padding-right: 7.5px;
-    background-color: var(--main-color);
-}
-
-#fotoPerfil {
-    width: 400px;
-    height: 600px;
-    border-bottom-right-radius: 100px;
-}
-
-#cajaTexto {
-    margin: 15px 25px 15px 25px;
-}
-
-#nombre {
-    color: var(--main-color);
-    font-weight: 1000;
-    font-size: 48px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-#descripcion {
-    font-family: var(--condensed-font);
-}
-
-#correo:active {
-    color: var(--accent-color);
 }
 
 header {
     background-color: var(--main-color);
     display: flex;
-    padding: 25px 70px 25px 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75% 5.25% 0.75% 5.25%;
 }
 
 .titulo {
     color: white;
-    font-size: 76px;
+    font-size: 4.2vw;
     font-weight: 700;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 #ucv {
-    font-size: 32px;
+    font-size: 1.68vw;
     font-weight: 400;
     display: inline;
 }
 
 #busqueda {
     display: flex;
-    margin: 15px 130px 15px 160px;
+    margin: 0;
+    width: 34.5%;
+    height: 2.85%;
 }
 
 #campoBusqueda {
     border: none;
-    height: 45px;
-    width: 350px;
+    width: 70%;
     border-radius: 25px 0px 0px 25px;
-    font-size: 20px;
-    margin: 0px;
+    font-size: 1.19vw;
     padding: 10px;
 }
 
 #botonBusqueda {
     border: none;
-    height: 65px;
-    width: 170px;
-    margin: 0px;
+    width: 30%;
     border-radius: 0px 25px 25px 0px;
     color: white;
-    font-size: 20px;
+    font-size: 1.19vx;
     background-color: var(--accent-color);
 }
 
@@ -103,83 +56,265 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
     background-color: var(--accent-color);
     border-radius: 100%;
-    margin: 5px 0px 0px 0px
+    margin: 0;
 }
 
 #iconoUsuario {
-    width: 60px;
-    height: 60px;
+    width: 105%;
+    height: 105%;
+}
+
+#menu {
+    display: none;
 }
 
 .separador {
+    margin: 0;
+}
+
+footer {
+    font-size: 1.05vw;
+    text-align: center;
+    color: gray;
+    opacity: 50%;
+    object-position: center;
+    padding: 3%;
+}
+
+#cajaPerfil {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 0% 2.25% 0%;
+    box-shadow: 0px 0.3vw 0.4vw 0.3vw rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+#cajaFotoPerfil {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    padding: 0% 0.375% 0% 0%;
+    background-color: var(--main-color);
+}
+
+.fotoPerfilPrincipal {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 7vw;
+}
+
+#fotoPerfilSmall {
+    display: none;
+}
+
+#cajaTexto {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1.43vw;
+    padding: 3% 3.75% 3% 3.75%;
+}
+
+#nombre {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 4vw;
     margin: 0px;
 }
 
+#descripcion {
+    font-family: var(--condensed-font);
+    color: var(--grey-800);
+}
+
+.primeraColumna {
+    font-size: 1.6vw;
+    width: 45%;
+}
+
+#correo:active {
+    color: var(--accent-color);
+}
+
 #semestre {
-    font-size: 50px;
-    margin: 25px 70px 25px 70px;
+    font-size: 2.7vw;
+    margin: 1.85% 4.5% 1.85% 4.5%;
 }
 
 #perfiles {
     display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 0px 30px 0px 30px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5vw;
+    row-gap: 7vw;
+    margin: 0% 6% 2% 4%;
 }
 
 .cajaPerfil {
     display: grid;
     position: relative;
-    width: 350px;
-    margin: 0px 40px 50px 40px;
+    width: 19vw;
     border: none;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     background-color: var(--main-color);
     color: inherit;
     transition: transform 0.5s ease;
 }
 
-.cajaPerfil:hover{
+.cajaPerfil:hover {
     transform: scale(1.1) rotate(5deg);
     background-color: var(--accent-color);
 }
 
-
 .fotoPerfil {
-    width: 350px;
-    height: 350px;
+    width: 19vw;
+    height: 19vw;
     object-fit: cover;
     object-position: center;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     margin: 0px;
 }
 
 .cajaNombrePerfil {
     background-color: white;
-    padding: 20px 15px 20px 15px;
+    padding: 7.5% 5% 7.5% 5%;
 }
 
 .nombrePerfil {
-    font-size: 26px;
-    margin: 0px;
+    font-size: 1.4vw;
+    margin: 0;
 }
 
 .lineaInferior {
     margin: 0px;
-    
-    height: 25px;
-    border-radius: 0px 0px 30px 30px;
+    height: 1.2vw;
+    border-radius: 0px 0px 20px 20px;
     border: none;
 }
 
-footer {
-    font-size: 26px;
-    text-align: center;
-    color: gray;
-    object-position: center;
-    padding: 40px;
+@media (min-width: 320px) and (max-width: 768px) {
+    .titulo {
+        font-size: 8vw;
+    }
+
+    #ucv {
+        font-size: 4vw;
+    }
+
+    #busqueda {
+        display: none;
+    }
+
+    #campoBusqueda {
+        display: none;
+    }
+
+    #botonBusqueda {
+        display: none;
+    }
+
+    #circuloIconoUsuario {
+        display: none;
+    }
+
+    #iconoUsuario {
+        display: none;
+    }
+
+    #menu {
+        display: inline;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    #cajaPerfil {
+        flex-direction: column;
+        box-shadow: 0px 0.5vw 0.4vw 0.3vw rgba(0, 0, 0, 0.2);
+    }
+
+    #cajaFotoPerfil {
+        width: 100%;
+        height: 80%;
+        padding: 0% 0% 1.5% 0%;
+    }
+
+    #fotoPerfilBig {
+        display: none;
+    }
+
+    #fotoPerfilSmall {
+        display: block;
+    }
+
+    .fotoPerfilPrincipal {
+        border-bottom-right-radius: 75px;
+    }
+
+    #cajaTexto {
+        font-size: 3.2vw;
+        display: grid;
+        margin: 0;
+        padding: 5% 12% 5% 12%;
+    }
+
+    #nombre {
+        color: var(--main-color);
+        font-weight: 900;
+        font-size: 7vw;
+        margin: 0px;
+    }
+
+    #descripcion {
+        font-family: var(--condensed-font);
+        color: var(--grey-800);
+    }
+
+    .primeraColumna {
+        font-size: 3.5vw;
+        width: 45%;
+    }
+
+    footer {
+        font-size: 2.55vw;
+    }
+
+    #semestre {
+        font-size: 6.5vw;
+        margin: 4% 4% 4% 4%;
+    }
+
+    #perfiles {
+        grid-template-columns: auto auto;
+        column-gap: 15vw;
+        row-gap: 5vw;
+        margin: 0% 9% 4% 9%;
+    }
+
+    .cajaPerfil {
+        width: 32vw;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .fotoPerfil {
+        width: 32vw;
+        height: 36vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .cajaNombrePerfil {
+        padding: 7.5% 5% 7.5% 5%;
+    }
+
+    .nombrePerfil {
+        font-size: 3vw;
+    }
+
+    .lineaInferior {
+        height: 2.8vw;
+        border-radius: 0px 0px 10px 10px;
+    }
 }
