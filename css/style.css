@@ -13,9 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.75% 5.25% 0.75% 5.25%;
+    border: none;
 }
 
-.enlaceLogo{
+.enlaceLogo {
     text-decoration: none;
 }
 
@@ -81,8 +82,53 @@ header {
     display: none;
 }
 
+#listaMenu {
+    display: none;
+    border: none;
+}
+
+#busquedaMini {
+    display: none;
+}
+
+#campoBusquedaMini {
+    display: none;
+    font-size: 10vw;
+}
+
+#botonBusquedaMini {
+    display: none;
+}
+
+#contenedorUsuarioMini {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+#circuloIconoUsuarioMini {
+    display: none;
+}
+
+#iconoUsuarioMini {
+    display: none;
+}
+
+#myProfile {
+    font-size: 6vw;
+    margin: 0;
+}
+
 .separador {
     margin: 0;
+}
+
+.separadorMenu {
+    margin: 5% 0% 5% 0%;
+    width: 100%;
+    background-color: white;
 }
 
 footer {
@@ -224,7 +270,7 @@ footer {
         font-size: 4vw;
     }
 
-    #busqueda {
+    #bigVisible {
         display: none;
     }
 
@@ -248,6 +294,66 @@ footer {
         display: inline;
         width: 7vw;
         height: 7vw;
+        border: none;
+        background: none;
+    }
+
+    #listaMenu {
+        display: none;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: var(--main-color);
+        font-size: 2vw;
+        color: white;
+        padding: 0% 5% 5% 5%;
+    }
+
+    #busquedaMini {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 2.85%;
+        justify-content: center;
+    }
+
+    #campoBusquedaMini {
+        display: flex;
+        align-items: center;
+        border: none;
+        width: 75%;
+        border-radius: 25px 0px 0px 25px;
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    #botonBusquedaMini {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 25%;
+        border-radius: 0px 25px 25px 0px;
+        color: white;
+        font-size: 3vx;
+        background-color: var(--accent-color);
+    }
+
+    #circuloIconoUsuarioMini {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background-color: var(--accent-color);
+        border-radius: 100%;
+        margin: 0;
+    }
+
+    #iconoUsuarioMini {
+        display: flex;
+        width: 70%;
+        height: 70%;
     }
 
     #cajaPerfil {
@@ -335,5 +441,9 @@ footer {
     .lineaInferior {
         height: 2.8vw;
         border-radius: 0px 0px 10px 10px;
+    }
+
+    #noEncontrado {
+        font-size: 3vw;
     }
 }
