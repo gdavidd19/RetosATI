@@ -10,6 +10,13 @@ conf.onload = () => {
     document.getElementsByClassName('enlaceLogo')[0].href = `index.html?lang=${lang}`;
     document.getElementById('campoBusqueda').placeholder = `${config.name}...`;
     document.getElementById('botonBusqueda').innerHTML = `${config.search}`;
+
+    const formulario = document.getElementById('busqueda');
+    formulario.addEventListener('submit', function (event) {
+        event.preventDefault();
+        window.location.href = `index.html?lang=${lang}&search=${formulario.elements[0].value}`;
+    });
+
     document.getElementsByTagName('footer')[0].innerHTML = `${config.copyRight}`;
 
     const primeraColumna = document.getElementsByClassName('primeraColumna');

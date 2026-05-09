@@ -207,6 +207,14 @@ footer {
     border: none;
 }
 
+#noEncontrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    font-size: 1.4vw;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     .titulo {
         font-size: 8vw;
