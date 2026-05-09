@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="icon" sizes="32x32" href="..\icon\cropped-logonuevo-32x32.png">
-    <link rel="icon" sizes="192x192" href="..\icon\cropped-logonuevo-192x192.png">
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="icon" sizes="32x32" href="icon/cropped-logonuevo-32x32.png">
+    <link rel="icon" sizes="192x192" href="icon/cropped-logonuevo-192x192.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="conf/configES.json" defer></script>
+    <script src="js/profile.js" defer></script>
 </head>
 <body>
     <header>
-        <a href="..\index.html" class="enlaceLogo"><h1 class="titulo"><p id="ucv"></p></h1></a>
+        <a href="index.html" class="enlaceLogo"><h1 class="titulo"><p id="ucv"></p></h1></a>
         <form id="busqueda">
             <input id="campoBusqueda">
             <button id="botonBusqueda" type="submit"></button>
         </form>
         <div id="circuloIconoUsuario">
-            <img src="../icon/userIcon.svg" id="iconoUsuario">
+            <img src="icon/userIcon.svg" id="iconoUsuario">
         </div>
-        <img id="menu" src="../icon/menuIcon.svg">
+        <img id="menu" src="icon/menuIcon.svg">
     </header>
     <hr class="separador">
     <section id="cajaPerfil">
         <div id="cajaFotoPerfil">
-            <img src="32412330Big.jpg" id="fotoPerfilBig" class="fotoPerfilPrincipal">
-            <img src="32412330Small.jpg" id="fotoPerfilSmall" class="fotoPerfilPrincipal">
+            <img id="fotoPerfilBig" class="fotoPerfilPrincipal">
+            <img id="fotoPerfilSmall" class="fotoPerfilPrincipal">
         </div>
         <div id="cajaTexto">
             <h1 id="nombre"></h1>
-            <p id="descripcion"><i></i></p>
+            <p><i id="descripcion"></i></p>
             <table>
                 <tr>
                     <td class="primeraColumna"></td>
-                    <td></td>
+                    <td class="segundaColumna"></td>
                 </tr>
                 <tr>
                     <td class="primeraColumna"></td>
-                    <td></td>
+                    <td class="segundaColumna"></td>
                 </tr>
                 <tr>
                     <td class="primeraColumna"></td>
-                    <td></td>
+                    <td class="segundaColumna"></td>
                 </tr>
                 <tr>
                     <td class="primeraColumna"></td>
-                    <td></td>
+                    <td class="segundaColumna"></td>
                 </tr>
                 <tr>
-                    <td class="primeraColumna"><b></b></td>
-                    <td><b></b></td>
+                    <td><b class="primeraColumna"></b></td>
+                    <td><b class="segundaColumna"></b></td>
                 </tr>
             </table>
-            <p><a id="correo"></a></p>
+            <p id="textoCorreo"></p>
         </div>
     </section>
     <hr class="separador">
