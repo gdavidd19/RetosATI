@@ -5,7 +5,6 @@ const conf = document.createElement('script');
 conf.type = 'text/javascript';
 conf.src = `conf/config${lang}.json`;
 conf.onload = () => {
-    document.getElementsByTagName('title')[0].innerHTML = `${config.home}`;
     document.getElementsByClassName('titulo')[0].innerHTML = `${config.site[0]}<p id="ucv">${config.site[1]}</p>${config.site[2]}`;
     document.getElementsByClassName('enlaceLogo')[0].href = `index.html?lang=${lang}`;
     document.getElementById('campoBusqueda').placeholder = `${config.name}...`;
@@ -36,6 +35,7 @@ conf.onload = () => {
     script.type = 'text/javascript';
     script.src = `${ci}/profile.json`;
     script.onload = () => {
+        document.getElementsByTagName('title')[0].innerHTML = `${profile.name}`;
         document.getElementById('fotoPerfilBig').src = `${ci}/${ci}Big${profile.image_ext}`;
         document.getElementById('fotoPerfilSmall').src = `${ci}/${ci}Small${profile.image_ext}`;
         document.getElementById('nombre').innerHTML = `${profile.name}`;
