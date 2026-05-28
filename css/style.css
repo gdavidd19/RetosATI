@@ -23,6 +23,8 @@ header {
 .titulo {
     color: white;
     font-size: 4.2vw;
+    min-width: 17vw;
+    min-height: 5vw;
     font-weight: 700;
     margin: 0;
     transition: color 0.5s ease;
@@ -155,6 +157,8 @@ footer {
     width: 80%;
     padding: 0% 0.375% 0% 0%;
     background-color: var(--main-color);
+    min-width: 30%;
+    max-width: 30%;
 }
 
 .fotoPerfilPrincipal {
@@ -171,6 +175,8 @@ footer {
 #cajaTexto {
     display: flex;
     flex-direction: column;
+    min-width: 60%;
+    min-height: 38.5vw;
     margin: 0;
     font-size: 1.43vw;
     padding: 3% 3.75% 3% 3.75%;
@@ -199,6 +205,7 @@ footer {
 
 #semestre {
     font-size: 2.7vw;
+    min-height: 3vw;
     margin: 1.85% 4.5% 1.85% 4.5%;
 }
 
