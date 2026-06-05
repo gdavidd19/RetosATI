@@ -372,6 +372,19 @@ footer {
         width: 100%;
         height: 80%;
         padding: 0% 0% 1.5% 0%;
+        display: block;
+        flex-grow: 1;
+        padding: 0% 0% 1% 0%;
+        background-color: var(--main-color);
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .fotoPerfilPrincipal {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-bottom-right-radius: 75px;
     }
 
     #fotoPerfilBig {
@@ -380,10 +393,6 @@ footer {
 
     #fotoPerfilSmall {
         display: block;
-    }
-
-    .fotoPerfilPrincipal {
-        border-bottom-right-radius: 75px;
     }
 
     #cajaTexto {
