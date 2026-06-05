@@ -89,6 +89,7 @@ conf.onload = () => {
 document.head.appendChild(conf);
 
 document.getElementById("menu").addEventListener("click", function () {
+    console.log(this);
     if (document.getElementById("listaMenu").style.display == 'none') {
         document.getElementById("listaMenu").style.display = 'flex';
     } else {
@@ -97,9 +98,11 @@ document.getElementById("menu").addEventListener("click", function () {
 });
 
 document.getElementById("circuloIconoUsuario").addEventListener("click", function () {
+    console.log(this);
     window.location.href = `profile.html?lang=${lang}&ci=32412330`;
 });
 
 document.getElementById("contenedorUsuarioMini").addEventListener("click", function () {
+    console.log(this);
     window.location.href = `profile.html?lang=${lang}&ci=32412330`;
 });
